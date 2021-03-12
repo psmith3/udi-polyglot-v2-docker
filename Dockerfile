@@ -15,6 +15,6 @@ RUN tar -zxf /opt/udi-polyglotv2/polyglot-v2-freebsd-x64.tar.gz
 
 COPY run.sh /opt/
 RUN chmod +x /opt/run.sh
-RUN chmod +x /opt/udi-polyglotv2/polyglot-v2-freebsd-x64.tar.gz
+RUN chmod +x /opt/udi-polyglotv2/polyglot-v2-freebsd-x64
 
 CMD /opt/run.sh
