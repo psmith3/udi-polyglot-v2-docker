@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM node:10-alpine
 
 EXPOSE 3000
 # Rachio Websocket
