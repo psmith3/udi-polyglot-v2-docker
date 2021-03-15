@@ -22,6 +22,6 @@ ENV PYTHON=/usr/bin/python
 ENV PYTHON3=/usr/bin/python3
 ENV NODE_ENV=development
 
-VOLUME Docker/polyglot-v2/dot-polyglot:/root/.polyglot/root/.polyglot
+VOLUME /root/.polyglot
 
 CMD /opt/run.sh
