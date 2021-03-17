@@ -15,7 +15,7 @@ RUN apt-get update \
   && ln -s /usr/bin/python3 python \
   && pip3 --no-cache-dir install --upgrade pip \
   && curl -sL https://deb.nodesource.com/setup_10.x | bash - \
-  && apt install -y nodejs \
+  && apt install -y nodejs npm \
   && rm -rf /var/lib/apt/lists/*
 
 RUN wget -q https://s3.amazonaws.com/polyglotv2/binaries/polyglot-v2-linux-x64.tar.gz
