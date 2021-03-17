@@ -8,7 +8,7 @@ RUN mkdir -p /opt/udi-polyglotv2/
 WORKDIR /opt/udi-polyglotv2/
 
 RUN apt-get update -y \
-  && sudo apt-get install -y apt-utils \
+  && apt-get install -y apt-utils \
   && apt-get install -y wget \
   && apt-get install -y git \
   && apt-get -y install curl \
