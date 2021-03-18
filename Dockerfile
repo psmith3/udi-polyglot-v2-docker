@@ -1,32 +1,8 @@
-FROM ubuntu:bionic
+FROM nikolaik/python-nodejs
 
 EXPOSE 3000
 # Rachio Websocket
 EXPOSE 3001
-
-RUN set -eux; \
-	apt-get update; \
-	apt-get install -y --no-install-recommends \
-		ca-certificates \
-		curl \
-		netbase \
-		wget \
-		git \
-		python3-pip python3-dev \
-		pip3 \
-		tzdata \
-	; \
-	rm -rf /var/lib/apt/lists/*
-
-RUN set -ex; \
-	if ! command -v gpg > /dev/null; then \
-		apt-get update; \
-		apt-get install -y --no-install-recommends \
-			gnupg \
-			dirmngr \
-		; \
-		rm -rf /var/lib/apt/lists/*; \
-	fi
 
 RUN mkdir -p /opt/udi-polyglotv2/
 WORKDIR /opt/udi-polyglotv2/
