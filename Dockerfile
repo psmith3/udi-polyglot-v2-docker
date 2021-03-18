@@ -13,7 +13,7 @@ RUN set -eux; \
 		wget \
 		git \
 		python3-pip python3-dev \
-		pip3 --no-cache-dir install --upgrade pip \
+		pip3 \
 		tzdata \
 	; \
 	rm -rf /var/lib/apt/lists/*
