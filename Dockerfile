@@ -1,4 +1,4 @@
-FROM node:10-buster
+FROM node:10-buster-slim
 
 EXPOSE 3000
 # Rachio Websocket
@@ -11,7 +11,6 @@ RUN apt-get update -y \
   && apt-get install -y apt-utils \
   && apt-get install -y wget \
   && apt-get install -y git \
-  && apt-get -y install curl \
   && apt-get install -y python3-pip python3-dev \
   && cd /usr/local/bin \
   && ln -s /usr/bin/python3 python \
