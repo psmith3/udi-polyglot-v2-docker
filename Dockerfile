@@ -1,4 +1,4 @@
-FROM nikolaik/python-nodejs:python3.9-nodejs12-alpine
+FROM nikolaik/python-nodejs:python3.9-nodejs15-alpine
 
 EXPOSE 3000
 # Rachio Websocket
