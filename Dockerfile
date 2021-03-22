@@ -1,4 +1,4 @@
--FROM alpine:latest
+FROM alpine:latest
 
 EXPOSE 3000
 # Rachio Websocket
