@@ -4,7 +4,12 @@ EXPOSE 3000
 # Rachio Websocket
 EXPOSE 3001
 
-RUN apk add --update python
+RUN apk --update-cache add python py-pip openssl ca-certificates
+RUN apk --update-cache add --virtual build-dependencies python-dev build-base wget \
+  && pip install -r requirements.txt \
+  && python setup.py install \
+  && apk del build-dependencies
+  
 RUN apk add --update nodejs
 
 RUN mkdir -p /opt/udi-polyglotv2/
