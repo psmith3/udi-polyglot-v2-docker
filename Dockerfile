@@ -21,4 +21,4 @@ RUN chmod +x /opt/udi-polyglotv2/polyglot-v2-linux-x64
 
 VOLUME /root/.polyglot
 
-CMD /opt/run.sh
+#CMD /opt/run.sh
