@@ -4,7 +4,7 @@ EXPOSE 3000
 # Rachio Websocket
 EXPOSE 3001
 
-RUN apk add --no-cache python3 py3-pip openssl ca-certificates python3-dev build-base wget
+RUN apk add --no-cache python3 py3-pip openssl ca-certificates python3-dev build-base wget bash
 RUN pip3 install --no-cache --upgrade pip setuptools wheel
 RUN apk add --update nodejs
 RUN apk add --update npm
@@ -21,4 +21,4 @@ RUN chmod +x /opt/udi-polyglotv2/polyglot-v2-linux-x64
 
 VOLUME /root/.polyglot
 
-#CMD /opt/run.sh
+CMD /opt/run.sh
