@@ -1,4 +1,4 @@
-FROM FROM nikolaik/python-nodejs:python3.7-nodejs10-slim
+FROM nikolaik/python-nodejs:python3.7-nodejs10-slim
 
 EXPOSE 3000
 # Rachio Websocket
